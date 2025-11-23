@@ -1,5 +1,9 @@
 # Personal AI Command Center
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/personal-ai-command-center?style=social)](https://github.com/yksanjo/personal-ai-command-center/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/commits/main)
+
+
 A clean, minimal dashboard for your daily productivity needs. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## ✨ Features
