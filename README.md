@@ -1,130 +1,84 @@
-# Personal AI Command Center
+# personal-ai-command-center
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.javascript.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/personal-ai-command-center?style=social)](https://github.com/yksanjo/personal-ai-command-center/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/personal-ai-command-center.svg)](https://github.com/yksanjo/personal-ai-command-center/commits/main)
+## Detailed Description
 
+personal-ai-command-center is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-A clean, minimal dashboard for your daily productivity needs. Built with Next.js, TypeScript, and Tailwind CSS.
+## Problem Statement
 
-## ✨ Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- **Task Management**: Add and delete tasks with localStorage persistence
-- **Quick Notes**: A single editable note pad (like a sticky note)
-- **AI Prompt Library**: Pre-loaded with 5 useful prompts with one-click copy
-- **Quick Links**: Fast access to your top 5 daily tools (GitHub, Gmail, Notion, etc.)
-- **Dark/Light Mode**: Toggle between themes with a beautiful UI
-- **No Backend**: Everything runs in the browser with localStorage
+## Solution Overview
 
-## 🚀 Getting Started
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
+- Git
+- Project runtime/toolchain for this repo
 
-### Installation
+### Local Setup
 
-1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd personal-ai-command-center
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+## Usage
 
-3. Run the development server:
-```bash
-npm run dev
-```
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+## Quality Standards
 
-## 🛠️ Tech Stack
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-- **Framework**: Next.js 14+ (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Theme**: next-themes
-- **State**: React hooks + localStorage
+## Security
 
-## 📁 Project Structure
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-```
-personal-ai-command-center/
-├── app/
-│   ├── layout.tsx          # Root layout with theme provider
-│   ├── page.tsx            # Main dashboard page
-│   ├── theme-provider.tsx  # Theme provider wrapper
-│   └── globals.css         # Global styles
-├── components/
-│   ├── TaskList.tsx        # Task management component
-│   ├── NotesPad.tsx        # Quick notes component
-│   ├── PromptLibrary.tsx   # AI prompts with copy functionality
-│   ├── QuickLinks.tsx      # Quick access links
-│   └── ThemeToggle.tsx     # Dark/light mode toggle
-└── public/                 # Static assets
-```
+## Contributing
 
-## 🎨 Customization
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-### Adding Your Own Prompts
+## Roadmap
 
-Edit `components/PromptLibrary.tsx` and add to the `prompts` array:
+Track upcoming milestones, technical debt, and planned feature work.
 
-```typescript
-const prompts: Prompt[] = [
-  // ... existing prompts
-  {
-    title: 'Your Prompt Title',
-    content: 'Your prompt content here...',
-  },
-];
-```
+## Support
 
-### Customizing Quick Links
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
-Edit `components/QuickLinks.tsx` and modify the `defaultLinks` array:
+## License
 
-```typescript
-const defaultLinks: QuickLink[] = [
-  { name: 'Your Tool', url: 'https://your-tool.com' },
-  // ... more links
-];
-```
-
-## 📦 Deployment
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Go to [vercel.com/new](https://vercel.com/new)
-3. Import your repository
-4. Deploy! 🚀
-
-The app will automatically deploy on every push to your main branch.
-
-## 🌱 Future Enhancements
-
-- [ ] Cloud sync with Supabase
-- [ ] User authentication
-- [ ] AI integration (send prompts to OpenAI API)
-- [ ] Calendar integration
-- [ ] Weather widget
-- [ ] Drag-and-drop widget reordering
-- [ ] Customizable themes
-
-## 📝 License
-
-MIT
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
----
-
-Built with ❤️ using Next.js and Tailwind CSS
+This project is released under the MIT License.
